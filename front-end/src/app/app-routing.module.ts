@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    loadChildren: () => import('@games/dots-and-boxes').then(m => m.DotsAndBoxesModule)
+    redirectTo: 'dots-and-boxes'
   }
 ];
 

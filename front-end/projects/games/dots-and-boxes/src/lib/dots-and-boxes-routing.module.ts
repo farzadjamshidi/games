@@ -5,7 +5,13 @@ import { DotsAndBoxesComponent } from './dots-and-boxes.component';
 const routes: Routes = [
   {
     path: '',
-    component: DotsAndBoxesComponent
+    component: DotsAndBoxesComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)
+      }
+    ]
   },
 ];
 

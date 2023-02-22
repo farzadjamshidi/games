@@ -2,14 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'lib-dots-and-boxes',
-  template: `
-    <p>
-      dots-and-boxes works!
-    </p>
-  `,
+  template: `<router-outlet></router-outlet>`,
   styles: [
   ]
 })
-export class DotsAndBoxesComponent {
+export class DotsAndBoxesComponent
+{
 
 }
